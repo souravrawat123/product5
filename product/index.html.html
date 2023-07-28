@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>for product</title>
+      <style>
+            @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+            * {
+                  padding: 0;
+                  margin: 0;
+            }
+
+            .main {
+                  width: 100%;
+                  height: 100vh;
+
+
+            }
+
+            .sub {
+                  height: 80px;
+                  width: 100%;
+                  background: #003cff;
+                  text-align: center;
+                  display: flex;
+                  align-items: center;
+            }
+
+            .sab {
+                  height: auto;
+                  width: 1300px;
+                  float: left;
+            }
+
+            .sab p {
+                  font-family: 'Playfair Display', serif;
+                  font-size: 24px;
+                  color: #ffffff;
+                  display: inline;
+                  margin: 0 260px 0 35px;
+
+            }
+
+            .sab p a:link,
+            .sab p a:visited {
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 12px;
+                  color: #ffffff;
+                  text-decoration: none;
+                  text-transform: uppercase;
+                  margin: 0 28px 0 0;
+            }
+
+            .sab p a:hover {
+                  color: #000;
+                  text-decoration: underline;
+            }
+
+            .button {
+                  height: auto;
+                  width: 200px;
+                  float: left;
+
+            }
+
+            .button p {
+                  margin: 0 0 0 40px;
+                  display: inline;
+                  cursor: pointer;
+            }
+
+            .navbar {
+                  height: 204px;
+                  width: 100%;
+                  background: #003cffbd;
+                  text-align: center;
+                  padding: 50px 0;
+            }
+
+            .navbar p {
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 24px;
+                  color: #fff;
+                  margin: 34px 0;
+            }
+
+            .navbar p a:link,
+            .navbar p a:visited {
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 14px;
+                  text-decoration: none;
+                  color: #fff;
+                  margin: 0 30px 0 0;
+            }
+
+            .navbar p a:hover {
+                  color: #000;
+                  text-decoration: underline;
+            }
+
+            .lifestyle {
+                  width: 1282px;
+                  height: 100vh;
+                  background: #fff;
+                  margin: auto;
+            }
+
+            .style {
+                  width: 1115px;
+                  height: 100vh;
+                  margin: auto;
+            }
+
+            .bottom {
+                  position: relative;
+                  margin: -84px 0 0 37px;
+            }
+
+            .header1 {
+                  font-size: 14px;
+                  font-family: 'Playfair Display', serif;
+            }
+
+            .header2 {
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 30px;
+            }
+
+            .header3 {
+                  font-size: 24px;
+                  font-family: 'Playfair Display', serif;
+            }
+
+            .header4 {
+                  font-size: 18px;
+                  font-family: 'Playfair Display', serif;
+            }
+
+            .text1 {
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 16px
+            }
+
+            .text2 {
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 13px;
+            }
+
+            .text3 {
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 24px;
+            }
+
+            .text4 {
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 14px;
+            }
+
+            .text5 {
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 12px;
+            }
+
+            .text6 {
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 16px;
+            }
+
+            .text7 {
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 10px;
+            }
+
+            .text8 {
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 18px;
+            }
+
+            .align_start {
+                  text-align: left;
+            }
+
+            .align_middle {
+                  text-align: center;
+            }
+
+            .align_end {
+                  text-align: right;
+            }
+
+            .colorheader1 {
+                  color: #3853d8;
+            }
+
+            .colorheader2 {
+                  color: #232323;
+            }
+
+            .colorheader3 {
+                  color: #cc3333;
+            }
+
+            .colorwhite {
+                  color: #999999;
+            }
+
+            .colorwhite1 {
+                  color: #fff;
+            }
+
+            .texttransform {
+                  text-transform: uppercase;
+
+            }
+
+            .texttransform1 {
+                  text-transform: lowercase;
+            }
+
+            .imgcircle {
+                  border-radius: 50%;
+            }
+
+            .bg-dark {
+                  background: #b34e43;
+            }
+
+            .bg-light {
+                  background: #292e39;
+            }
+
+            .w-25 {
+                  width: 25%;
+            }
+
+            .w-50 {
+                  width: 50%;
+            }
+
+            .w-75 {
+                  width: 75%;
+            }
+
+            .w-100 {
+                  width: 100%;
+            }
+
+            .float-left {
+                  float: left;
+            }
+
+            .dis {
+                  display: inline;
+                  padding: 10px 0 0 0;
+            }
+
+            .life {
+                  width: 437px;
+                  height: 100vh;
+
+                  float: left;
+            }
+
+            .life ul {
+                  list-style-type: none;
+                  margin: 20px 0;
+            }
+
+            .life ul li {
+                  margin: 20px 0;
+            }
+
+            .your {
+                  width: 400px;
+                  height: 100vh;
+
+                  float: left;
+                  margin: 0 0 0 178px;
+            }
+
+            .shirt {
+                  width: 50px;
+                  height: 50px;
+                  float: left;
+                  border-width: 1px;
+                  border-color: rgb(211, 211, 211);
+                  border-style: solid;
+                  padding: 15px 15px;
+
+            }
+
+            .custom {
+                  margin: 0 190px 0 0;
+            }
+
+            .custom1 {
+                  margin: 0 106px 0 0;
+            }
+
+            .custom2 {
+                  margin: 0 32px 0 0;
+            }
+
+            .life4 h2 {
+                  width: 89px;
+                  height: 45px;
+
+                  border: 2px solid #999999;
+                  border-radius: 20px;
+                  display: inline;
+                  margin: 0 0 0 25px;
+                  padding: 5px 15px;
+            }
+
+            .custom3 {
+                  margin: 60px 0 0 0;
+            }
+
+            .custom5 {
+                  margin: 0 0 0 5px;
+            }
+
+            .life4 button {
+                  height: 35px;
+                  width: 120px;
+                  font-family: 'Poppins', sans-serif;
+                  font-size: 12px;
+                  color: white;
+                  background: #3853d8;
+                  border: none;
+                  border-radius: 20px;
+                  cursor: pointer;
+            }
+
+            .life4 button:hover {
+                  color: #3853d8;
+                  background: #000;
+            }
+
+            .custom4 {
+                  margin: 0 0 0 25px;
+            }
+
+            .custom6 {
+                  margin: 31px 0 0 0;
+            }
+
+            .custom7 {
+                  padding: 120px 0 31px 0;
+            }
+
+            .custom8 {
+                  margin: 70px 0 0 0;
+            }
+
+            .custom9 {
+                  margin: 200px 0 0 0;
+            }
+
+            .custom12 {
+                  margin: 100px 0;
+            }
+
+            .custom10 {
+                  margin: 0 0 40px 0;
+            }
+
+            .custom11 {
+                  margin: 0 80px 0 90px;
+            }
+
+            .custom12 {
+                  margin: 0 0 0 80px;
+            }
+
+            .all {
+                  width: 600px;
+                  height: 82px;
+
+                  margin: 100px 0;
+            }
+
+            .all p {
+                  display: inline;
+                  margin: 0 0 0 100px;
+            }
+
+            .all p a:link,
+            .all p a:visited {
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 14px;
+                  color: #000;
+                  text-decoration: none;
+                  text-transform: uppercase;
+                  text-weight: bold;
+
+
+            }
+
+            .all p a:hover {
+                  color: #3853d8;
+                  text-decoration: underline;
+            }
+
+            .all p a.active {
+                  color: #3853d8;
+            }
+
+            .bold {
+                  font: bold;
+            }
+
+            .Reviews {
+                  width: 1283px;
+                  height: 130vh;
+                  background-color: rgb(245, 245, 245);
+                  ;
+                  margin: auto;
+                  padding: 50px 0;
+
+            }
+
+            .custom13 {
+                  margin: 30px 0 56px 130px;
+            }
+
+            .write {
+                  width: 1030px;
+                  height: auto;
+                  padding: 10px 0 0 0;
+                  margin: 54px 0 58px 130px;
+            }
+
+            .custom14 {
+                  margin: 0 0 0 420px;
+            }
+
+            .custom15 {
+                  margin: 0 56px 0 30px;
+            }
+
+            .custom16 {
+                  margin: 0 20px;
+            }
+
+            .custom17 {
+                  margin: 27px 0 27px 80px;
+            }
+
+            .custom18 {
+                  margin: 0 0 30px 0;
+            }
+
+            .sale {
+                  width: 1280px;
+                  height: 50vh;
+
+                  margin: 42px auto;
+
+            }
+
+            .product {
+                  width: 295px;
+                  height: 50vh;
+                  background: #000;
+                  float: left;
+
+            }
+
+            .product2 {
+                  width: 295px;
+                  height: 50vh;
+                  float: left;
+                  margin: 0 0 0 30px;
+                  border-width: 1px;
+                  border-color: rgb(211, 211, 211);
+                  border-style: solid;
+            }
+
+            .product2 button {
+                  width: 50px;
+                  height: 20px;
+                  color: #fff;
+                  background: #3853d8;
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 14px;
+                  border: none;
+                  cursor: pointer;
+
+
+            }
+
+            .product2 button:hover {
+                  color: #3853d8;
+                  background: #000;
+            }
+
+            .product3 {
+                  width: 295px;
+                  height: 50vh;
+                  float: left;
+                  margin: 0 0 0 30px;
+                  border-width: 1px;
+                  border-color: rgb(211, 211, 211);
+                  border-style: solid;
+
+            }
+
+            .custom19 {
+                  margin: 74px 0 34px 0;
+            }
+
+            .custom20 {
+                  margin: 72px 0 54px 0;
+            }
+
+            .custom22 {
+                  margin: 20px 20px 0 0;
+            }
+
+            .custom21 {
+                  margin: 40px 0 20px 0;
+            }
+
+            .custom23 {
+                  margin: 0 10px 0 55px;
+            }
+
+            .PRINTING {
+                  width: 1280px;
+                  height: 30vh;
+
+                  margin: auto;
+                  padding: 80px 0;
+            }
+
+            .custom25 {
+                  margin: 0 0 0 25px;
+            }
+
+            .model {
+                  width: 1280px;
+                  height: 50vh;
+                  background: #000;
+                  margin: auto;
+            }
+
+            .modex {
+                  width: 220px;
+                  height: 50vh;
+
+                  float: left;
+                  cursor: pointer;
+            }
+
+            .margin1 {
+                  margin: 0 5px 0 0;
+            }
+
+            .margin {
+                  margin: 40px 0 70px 0;
+            }
+
+            .margin2 {
+                  margin: 0 0 0 30px;
+            }
+
+            .margin3 {
+                  margin: 60px 0 60px 0;
+            }
+
+            .modex1 {
+                  width: 480px;
+                  height: 50vh;
+                  float: left;
+                  text-align: center;
+                  padding: 40px 0 0;
+
+            }
+
+            .modex1 input {
+                  height: 20px;
+                  width: 300px;
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 12px;
+                  padding: 0 0 0 10px;
+            }
+
+            .modex1 button {
+                  height: 30px;
+                  width: 130px;
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 12px;
+                  cursor: pointer;
+                  color: #363637;
+                  background: #fff;
+                  border: none;
+            }
+
+            .modex1 button:hover {
+                  color: #fff;
+                  background: #363637;
+            }
+
+            .margin4 {
+                  margin: 0 0 0 20px;
+            }
+
+            .margin5 {
+                  margin: 0 140px 0 40px;
+            }
+
+            .margin6 {
+                  margin: 0 0 0 125px;
+            }
+
+            .margin7 {
+                  padding: 40px 0 0 0;
+            }
+      </style>
+</head>
+
+<body>
+      <div class="main">
+            <div class="sub">
+                  <div class="sab">
+                        <p>Be.Pro</p>
+                        <p><a href="#">home</a> <a href="#">shop</a> <a href="#">portfolio</a> <a href="#">page</a> <a
+                                    href="#">blog</a> <a href="#">elements</a></p>
+                  </div>
+                  <div class="button">
+                        <p><img src="images5/cart.png" alt=""></p>
+                        <p><img src="images5/search.png" alt=""></p>
+                  </div>
+            </div>
+            <div class="navbar">
+                  <p>Men’s Lifestyle Clothing</p>
+                  <p><a href="#">Home</a> <a href="#">Catalog</a> <a href="#"></a> <a href="#">Men</a> <a
+                              href="#">Clothing</a></p>
+            </div>
+            <div class="lifestyle bottom">
+                  <div class="style">
+                        <div class="life custom7">
+                              <ul>
+                                    <li class="header1 colorheader1 texttransform">lifestyle</li>
+                                    <li class="header2 colorheader2">Double-faced Wool Cape Jacket</li>
+                                    <li class="dis"><img src="images5/star.png" alt=""></li>
+                                    <li class="dis"><img src="images5/star.png" alt=""></li>
+                                    <li class="dis"><img src="images5/star.png" alt=""></li>
+                                    <li class="dis"><img src="images5/star.png" alt=""></li>
+                                    <li class="dis"><img src="images5/star1.png" alt=""></li>
+                                    <li class="dis text1 colorwhite">4 reviews | Write your review</li>
+
+                              </ul>
+                              <div class="life2 custom6">
+                                    <p class="dis custom text4 colorheader2">Color:</p>
+                                    <p class="dis text4 colorheader2">Size:</p>
+                              </div>
+                              <div class="life3 custom6">
+                                    <p class="dis"><img src="images5/circle8.png" alt=""></p>
+                                    <p class="dis"><img src="images5/circle7.png" alt=""></p>
+                                    <p class="dis"><img src="images5/circle6.png" alt=""></p>
+                                    <p class="dis custom1"><img src="images5/circle5.png" alt=""></p>
+                                    <p class="dis custom2 header1 colorheader2">S</p>
+                                    <p class="dis custom2 header1 colorheader2">M</p>
+                                    <p class="dis custom2 header1 colorheader1">L</p>
+                                    <p class="dis custom2 header1 colorheader2">XL</p>
+                              </div>
+                              <div class="life4 custom3">
+                                    <p class="dis text3 colorheader3">$47.00</p>
+                                    <p class="dis custom5 text3 colorwhite"><del>$64.00</del></p>
+                                    <h2> - 02+</h2>
+                                    <button class="custom4"> + Add To Cart</button>
+                              </div>
+                              <div class="life5">
+
+                                    <p class="text5 colorwhite custom8"><img src="images5/add1.png" alt=""></p>
+                              </div>
+                        </div>
+                        <div class="your">
+                              <p class="custom9"><img src="images5/jacket.png" alt=""></p>
+                        </div>
+                        <div class="shirt custom9">
+                              <p class="custom10"><img src="images5/t-shirt.png" alt=""></p>
+                        </div>
+                        <div class="shirt">
+                              <p class="custom10"><img src="images5/t-shirt1.png" alt=""></p>
+                        </div>
+                        <div class="shirt">
+                              <p class="custom10"><img src="images5/t-shirt2.png" alt=""></p>
+                        </div>
+                        <div class="shirt">
+                              <p class="custom10"> <img src="images5/t-shirt3.png" alt=""></p>
+                        </div>
+                  </div>
+
+            </div>
+
+            <div class="all">
+                  <p><a href="#" class="active">Review</a></p>
+                  <p><a href="#">Specification</a></p>
+                  <p><a href="#">Description</a></p>
+            </div>
+
+
+            <div class="Reviews">
+                  <p class="dis custom13 header3 colorheader2">All Reviews</p>
+                  <p class="dis header3 colorheader1">(03)</p>
+                  <div class="write">
+                        <p class="dis"><img src="images5/face1.png" alt=""></p>
+                        <p class="dis text1 colorheader2 custom15 bold">Williams</p>
+                        <p class="dis"><img src="images5/star.png" alt=""></p>
+                        <p class="dis"><img src="images5/star.png" alt=""></p>
+                        <p class="dis" <img src="images5/star.png" alt=""></p>
+                        <p class="dis"><img src="images5/star.png" alt=""></p>
+                        <p class="dis"><img src="images5/star1.png" alt=""></p>
+                        <p class="dis custom16 text2 colorwhite">| Write your review</p>
+                        <p class="dis custom14 text7 colorheader2"> Date: April 05, 2017</p>
+                        <p class="custom17 text4 colorwhite">Orci varius natoque penatibus et magnis dis parturient
+                              montes, nascetur ridiculus mus. Aenean sodales congue ex, quis dictum<br> mauris. Donec at
+                              vulputate metus, vel venenatis magna. Maecenas tincidunt at erat euismod malesuada.</p>
+                        <p class="custom17"><img src="images5/like.png" alt=""></p>
+                        <hr class="colorwhite">
+                  </div>
+                  <div class="write">
+                        <p class="dis"><img src="images5/us.png" alt=""></p>
+                        <p class="dis text1 colorheader2 custom15 bold">BazicLab</p>
+                        <p class="dis"><img src="images5/star.png" alt=""></p>
+                        <p class="dis"><img src="images5/star.png" alt=""></p>
+                        <p class="dis" <img src="images5/star.png" alt=""></p>
+                        <p class="dis"><img src="images5/star.png" alt=""></p>
+                        <p class="dis"><img src="images5/star1.png" alt=""></p>
+                        <p class="dis custom16 text2 colorwhite">| Write your review</p>
+                        <p class="dis custom14 text7 colorheader2"> Date: April 05, 2017</p>
+                        <p class="custom17 text4 colorwhite">Orci varius natoque penatibus et magnis dis parturient
+                              montes, nascetur ridiculus mus. Aenean sodales congue ex, quis dictum<br> mauris. Donec at
+                              vulputate metus, vel venenatis magna. Maecenas tincidunt at erat euismod malesuada.</p>
+                        <p class="custom17"><img src="images5/like.png" alt=""></p>
+                        <hr class="colorwhite">
+                  </div>
+                  <div class="write">
+                        <p class="dis"><img src="images5/us2.png" alt=""></p>
+                        <p class="dis text1 colorheader2 custom15 bold">Thomas</p>
+                        <p class="dis"><img src="images5/star.png" alt=""></p>
+                        <p class="dis"><img src="images5/star.png" alt=""></p>
+                        <p class="dis" <img src="images5/star.png" alt=""></p>
+                        <p class="dis"><img src="images5/star.png" alt=""></p>
+                        <p class="dis"><img src="images5/star1.png" alt=""></p>
+                        <p class="dis custom16 text2 colorwhite">| Write your review</p>
+                        <p class="dis custom14 text7 colorheader2"> Date: April 05, 2017</p>
+                        <p class="custom17 text4 colorwhite">Orci varius natoque penatibus et magnis dis parturient
+                              montes, nascetur ridiculus mus. Aenean sodales congue ex, quis dictum<br> mauris. Donec at
+                              vulputate metus, vel venenatis magna. Maecenas tincidunt at erat euismod malesuada.</p>
+                        <p class="custom17"><img src="images5/like.png" alt=""></p>
+                        <hr>
+                  </div>
+                  <p class="align_middle"><img src="images5/LoadMore.png" alt=""></p>
+            </div>
+            <div class="sale">
+                  <div class="product align_middle">
+                        <p class="custom19"><img src="images5/product.png" alt=""></p>
+                        <p class="text8 colorwhite1 texttransform">Popular Product</p>
+                        <p class="text4 colorwhite1 custom20">More Product&rarr;</p>
+                  </div>
+                  <div class="product2">
+                        <p class="align_end custom22"><button>sale</button></p>
+                        <p class="align_middle custom21"><img src="images5/product1.png" alt=""></p>
+                        <p class="align_middle header4 colorheader2">Essential cotton-blend</p>
+                        <p class="dis text4 colorwhite custom23"><del>$200.00 USD</del></p>
+                        <p class="dis colorheader1 text4">$100.00 USD </p>
+                  </div>
+                  <div class="product3 align_middle">
+                        <p class="custom19"><img src="images5/product2.png" alt=""></p>
+                        <p class="header4 colorheader2">Flecked cotton-blend</p>
+                        <p class="header1 colorheader1 text4">$175.00 USD</p>
+                  </div>
+                  <div class="product3 align_middle">
+                        <p class="custom19"><img src="images5/product3.png" alt=""></p>
+                        <p class="header4 colorheader2">Striped cotton t-shirt</p>
+                        <p class="header1 colorheader1 text4">$200.00 USD</p>
+                  </div>
+            </div>
+            <div class="PRINTING">
+                  <p class="dis colorwhite">&lt;</p>
+                  <p class="dis custom25"><img src="images5/PRINTING.png" alt=""></p>
+                  <p class="dis custom25"><img src="images5/PRINTING1.png" alt=""></p>
+                  <p class="dis custom25"><img src="images5/PRINTING2.png" alt=""></p>
+                  <p class="dis custom25"><img src="images5/PRINTING3.png" alt=""></p>
+                  <p class="dis colorheader1">&gt;</p>
+            </div>
+            <div class="model">
+                  <div class="modex margin6">
+                        <p class="colorwhite1 header3 margin">ModaX</p>
+                        <p class="dis margin1"><img src="images5/facebook.png" alt=""></p>
+                        <p class="dis margin1"><img src="images5/instgram.png" alt=""></p>
+                        <p class="dis margin1"><img src="images5/whataap.png" alt=""></p>
+                        <p class="dis margin1"><img src="images5/twiitter.png" alt=""></p>
+                  </div>
+                  <div class="modex1 margin5">
+                        <p class="text5 colorwhite1 margin2 dis">Man</p>
+                        <p class="text5 colorwhite1 margin2 dis">Woman</p>
+                        <p class="text5 colorwhite1 margin2 dis">Lookbook</p>
+                        <p class="text5 colorwhite1 margin2 dis"> Sale</p>
+                        <p class="text5 colorwhite1 margin2 dis">Blog</p>
+                        <p class="margin3 text4 colorwhite1">Subscribe to news</p>
+                        <p class="dis"><input type="email" name="Emailaddress" placeholder="Emailaddress" requried></p>
+                        <p class="margin4 dis"><button>submit</button></p>
+                  </div>
+                  <div class="modex2">
+                        <p class="colorwhite1 text5 margin7">Contact US</p>
+                        <p class="colorwhite1 text5 margin3">San Francisco, California<br>400 Castro St, San Francisco,
+                              CA<br>(+1) 686-868-9999</p>
+                        <p class="dis margin1"><img src="images5/visa.jpg" alt=""></p>
+                        <p class="dis margin1"><img src="images5/visa1.png" alt=""></p>
+                        <p class="dis margin1"><img src="images5/visa2.png" alt=u""></p>
+                        <p class="dis margin1"><img src="images5/visa3.png" alt=""></p>
+                        <p class="dis margin1"><img src="images5/visa4.jpg" alt=""></p>
+
+                  </div>
+            </div>
+      </div>
+</body>
+
+</html>
